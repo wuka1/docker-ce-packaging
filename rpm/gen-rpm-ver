@@ -58,7 +58,8 @@ if [[ "$rpmVersion" == *-dev ]] || [ -n "$($GIT_COMMAND status --porcelain)" ]; 
     gitDate="$($DATE_COMMAND --utc --date "@$gitUnix" +'%Y%m%d%H%M%S')"
     gitCommit="$($GIT_COMMAND log -1 --pretty='%h')"
     # rpmVersion is now something like '0.0.0-20180719213702-cd5e2db'
-    rpmVersion="0.0.0-${gitDate}-${gitCommit}"
+    #rpmVersion="0.0.0-${gitDate}-${gitCommit}"
+    rpmVersion="19.03.08-ruijie"
     rpmRelease="0"
     origVersion=$rpmVersion
 fi
